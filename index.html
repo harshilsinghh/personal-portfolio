@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshil Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Typed.js for animated text -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+  <!-- Header with Typing Animation -->
+  <header>
+    <h1><span id="typed"></span></h1>
+    <p>Welcome to my portfolio!</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p><strong>Name:</strong> Harshil Singh</p>
+    <p><strong>Email:</strong> <a href="mailto:22cs01015@iitbbs.ac.in">22cs01015@iitbbs.ac.in</a></p>
+    <p><strong>Education:</strong><br>
+      B.Tech in Computer Science and Engineering at IIT Bhubaneswar (GPA: 7.49)<br>
+      CBSE - Bal Bharati School – 91.4%</p>
+    <p><strong>JEE Advanced Rank:</strong> 2487</p>
+  </section>
+
+  <section id="resume-download" data-aos="fade-up">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download class="download-btn">
+      <i class="fa-solid fa-file-arrow-down"></i> Download My Resume
+    </a>
+  </section>
+
+  <!-- Profiles -->
+  <section id="links" data-aos="fade-up">
+    <h2>Profiles</h2>
+    <div class="profile-links">
+      <a href="https://leetcode.com/harshil-singh" target="_blank"><i class="fa-solid fa-code"></i> Leetcode</a>
+      <a href="https://codechef.com/harshilsingh21" target="_blank"><i class="fa-solid fa-utensils"></i> Codechef</a>
+      <a href="https://github.com/harshilsinghh" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/harshil-singh" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:22cs01015@iitbbs.ac.in"><i class="fa-solid fa-envelope"></i> Email Me</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <h3>BiasFree – Tredence Hackathon</h3>
+    <ul>
+      <li>Created ML model to detect gender-biased sentences using Random Forest.</li>
+      <li>Achieved 90% AUC-ROC score, improved real-time accuracy by 20%.</li>
+      <li>
+        <a href="https://github.com/harshilsinghh/BiasFree" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </li>
+    </ul>
+  
+    <h3>CricPredict – Cricket Win Predictor</h3>
+    <ul>
+      <li>Used TensorFlow/Keras on 100k+ data rows; reached 87.5% accuracy.</li>
+      <li>Improved latency by 20% using Pandas & Matplotlib.</li>
+      <li>
+        <a href="https://github.com/harshilsinghh/CricPredict" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </li>
+    </ul>
+  
+    <h3>Cloud Particles Clustering</h3>
+    <ul>
+      <li>Used ViT, UMAP, K-Means to classify ~18k images.</li>
+      <li>Evaluation: Silhouette Score: 43%, DBI: 0.81.</li>
+      <li>
+        <a href="https://github.com/harshilsinghh/Cloud-particles-image-clustering" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </li>
+    </ul>
+  
+    <h3>RISC-V CPU Simulator</h3>
+    <ul>
+      <li>Assembly to machine code translator built in C++.</li>
+      <li>Reduced execution error by 30% using instruction optimization.</li>
+      <!-- No GitHub link here per your request -->
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> C/C++, Python, MySQL</p>
+    <p><strong>Tools:</strong> MatLab, Jupyter</p>
+    <p><strong>Frameworks/Libraries:</strong> TensorFlow, Keras, NumPy, Scikit-Learn, Pandas, Tkinter, Matplotlib</p>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>Supervised ML:</strong> Stanford/DeepLearning.AI – Regression & classification</li>
+      <li><strong>Advanced Learning:</strong> Multi-class classification, boosted trees (92% acc)</li>
+      <li><strong>Unsupervised & RL:</strong> Clustering, anomaly detection, RL with 40% reward boost</li>
+    </ul>
+  </section>
+
+  <!-- Extras -->
+  <section id="extra" data-aos="fade-up">
+    <h2>Leadership & Activities</h2>
+    <ul>
+      <li><strong>Sketching Mentor</strong> – Kalakriti Society (mentored 30+ students)</li>
+      <li><strong>Member:</strong> RISC Robotics, Alma Fiesta Events Team (2022–2023)</li>
+    </ul>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <section id="quick-links" data-aos="fade-up">
+    <h2>Quick Navigation</h2>
+    <div class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#links">Profiles</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#extra">Extras</a>
+      <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    new Typed('#typed', {
+      strings: ["Hi, I'm Harshil Singh", "Machine Learning Enthusiast", "Aspiring DevOps Engineer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+  <!-- Chatbot -->
+  <section id="chatbot" data-aos="fade-up">
+    <h2>Ask Me Anything</h2>
+    <p>This chatbot can answer questions about my experience, skills, and certifications.</p>
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/efZYp4ZE4IQ7dI4ev2MtE"
+      width="100%"
+      style="height: 100%; min-height: 700px"
+      frameborder="0"
+></iframe>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+</body>
+</html>
